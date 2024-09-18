@@ -1,0 +1,878 @@
+
+<html lang="en"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="csrf" content="" id="csrf">
+	<link rel="shortcut icon" href="/img/tildafavicon.ico">
+	<link rel="icon" href="/img/tildafavicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/img/tildafavicon-180x180.png" type="image/png">
+
+	<title>Tilda: ЭкоМосква</title>
+
+	<script src="/js/jquery-1.10.2.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+
+<script src="https://static.tildacdn.com/js/tilda-scripts-3.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+
+	<link href="/front/css/t-normalize.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+	<script src="/js/jquery-ui.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	
+	
+		<link href="/front/css/t-page-all.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+	<link href="/front/css/t-page-edit-all.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+		
+	
+	<link href="/front/css/t-common.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+	<link href="/front/css/td-uikit.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+
+	<link href="/front/css/t-futurapt.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+
+	<link href="/front/css/t-popups.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+
+	<link href="/front/css/t-project-settings.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+
+	<script type="text/javascript">
+		
+		window.onerror = function (m, f, l, c, e) {
+			if (!window.td_jserrors) {window.td_jserrors = [];}
+				window.td_jserrors.push({
+					message: m,
+					filename: f,
+					lineno: l,
+					colno: c,
+					error: e
+				});
+		};
+		
+	</script>
+
+	<script src="/front/js/t-popups.min.js?v=70277" type="text/javascript" onerror="this.loaderr='y';"></script>
+
+	<!-- MiniColors -->
+	<script src="/front/js/jquery.minicolors.min.js?v=70277&amp;nocache=yes" onerror="this.loaderr='y';"></script>
+	<link rel="stylesheet" href="/front/css/jquery.minicolors.min.css?v=70277&amp;nocache=yes" onerror="this.loaderr='y';">
+
+	<script type="text/javascript" src="/front/js/t-common.min.js?v=70277" onerror="this.loaderr='y';"></script>
+	<script type="text/javascript" src="/front/js/t-helpbubble.min.js?v=70277" onerror="this.loaderr='y';"></script>
+	<script type="text/javascript" src="/front/js/t-translate.min.js?v=70277" onerror="this.loaderr='y';"></script>
+
+	<script type="text/javascript">
+		var $headlinefont = "TildaSans";
+		var $textfont = "TildaSans";
+	</script>
+
+	<!-- Redactor is here -->
+	<script type="text/javascript" src="/front/js/jquery.htmlClean.min.js?v=70277" onerror="this.loaderr='y';"></script>
+			<link rel="stylesheet" href="/front/css/t-quill-3.0.min.css?v=70277" onerror="this.loaderr='y';">
+		<script type="text/javascript" src="/front/js/t-quill-3.0.min.js?v=70277" onerror="this.loaderr='y';"></script>
+		<script type="text/javascript">window.ver_redactor='q';</script>
+		
+	<link href="/front/vendor/redactor/2/tilda_fontcolorex.css" rel="stylesheet" onerror="this.loaderr='y';">
+	<link href="/front/vendor/bootstrap-colorpicker-master/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet" onerror="this.loaderr='y';">
+	<script src="/front/vendor/bootstrap-colorpicker-master/dist/js/bootstrap-colorpicker.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+
+	<link href="/front/css/t-upload.min.css?v=70277" type="text/css" rel="stylesheet" onerror="this.loaderr='y';">
+	<script src="/front/js/t-upload.min.js?v=70277" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script type="text/javascript">
+		lang = "RU";
+		Tildaupload_PUBLICKEY = 'uiyejbdskjfiowe32';
+		Tildaupload_UPLOADKEY = '30366162-3362-4730-b930-353233383537';	</script>
+
+	<!-- Colorpicker -->
+	<link href="/front/css/t-colorpicker.min.css?v=70277" type="text/css" rel="stylesheet" onerror="this.loaderr='y';">
+	<script src="/front/js/t-colorpicker.min.js?v=70277" async="" type="text/javascript" onerror="this.loaderr='y';"></script>
+
+	<script src="/front/js/t-jserrors.min.js?v=70277" onerror="this.loaderr='y';"></script>
+	
+	
+    <link href="https://front.tildacdn.com/plugins/selectbox/t-selectbox.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+    <script src="https://front.tildacdn.com/plugins/selectbox/t-selectbox.min.js?v=70277" async="" onerror="this.loaderr='y';"></script>
+
+	<link href="https://front.tildacdn.com/plugins/previewbox/t-previewbox.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+	<script src="https://front.tildacdn.com/plugins/previewbox/t-previewbox.min.js?v=70277" async="" onerror="this.loaderr='y';"></script>
+
+	<link href="https://front.tildacdn.com/plugins/shadowpicker/t-shadowpicker.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+	<script src="https://front.tildacdn.com/plugins/shadowpicker/t-shadowpicker.min.js?v=70277" async="" onerror="this.loaderr='y';"></script>
+
+	<script src="https://neo.tildacdn.com/js/tilda-collect-network-errors-1.0.min.js" type="text/javascript"></script>
+
+
+<link href="/css/tilda-grid-3.0.min.css?v=70277" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+
+
+
+
+
+<link href="https://static.tildacdn.com/css/fonts-tildasans.css" rel="stylesheet" onerror="this.loaderr='y';">
+
+<link href="/projects/staticstyle/?projectid=10581083&amp;v=70277" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+<link href="https://static.tildacdn.com/css/tooltipster.min.css?v=70277" rel="stylesheet" onerror="this.loaderr='y';">
+<script src="https://static.tildacdn.com/js/tilda-tooltip-1.0.min.js?v=70277" onerror="this.loaderr='y';"></script>
+
+	<script src="https://static.tildacdn.com/js/tilda-cover-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-slds-1.4.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/hammer.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-menusub-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-menu-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-cards-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-events-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-video-processor-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-zero-scale-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-zero-tooltip-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-zero-video-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-zero-gallery-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-zero-forms-1.0.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+	<script src="https://static.tildacdn.com/js/tilda-zero-1.1.min.js" type="text/javascript" onerror="this.loaderr='y';"></script>
+
+	<link href="https://static.tildacdn.com/css/tilda-cover-1.0.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/tilda-slds-1.4.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/tilda-menusub-1.0.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/tilda-cards-1.0.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/tilda-forms-1.0.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/tilda-carousel-1.0.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/ya-share.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/carousel-btstrp.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+	<link href="https://static.tildacdn.com/css/tilda-zero-gallery-1.0.min.css" rel="stylesheet" media="screen" onerror="this.loaderr='y';">
+
+
+
+
+
+<script type="text/javascript">
+	window.ver='70277';
+			window.jwt_ai = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VydWlkIjozODgzNjk4MzksInVzZXJwbGFuIjoiMSIsInByb2plY3RpZCI6MTA1ODEwODMsInRpbWUiOjE3MjY2NzIxMjgsInVzZXJsYW5nIjoiUlUiLCJwcm9qZWN0X2N1cnJlbmN5IjoiUlVCIn0.B4k2neKKVQVyR5Vq_jyi5KMC2IYDuacN7P0VFlmvkUo';
+		</script>
+	  		  		<style data-tpl-id="114">
+		/* T306 */
+
+.t306__table-container {
+    position: relative;
+    z-index: 1;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.t306__table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.t306__img {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+
+@media screen and (max-width: 960px) {
+    .t306__table-cell {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+	</style>
+	
+			<style data-tpl-id="472">
+		/* T472 */
+
+.t472 .t-section__descr {
+    max-width: unset;
+}
+
+.t472__title {
+    margin-bottom: 60px;
+}
+
+.t472__descr {
+    margin-bottom: 80px;
+}
+
+.t472__blockimg {
+    max-width: 360px;
+    height: 360px;
+}
+
+.t472__scroll-icon-wrapper {
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .t472__blockimg {
+        height: 320px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .t472__blockimg {
+        height: 360px;
+        margin: 0 auto 20px;
+    }
+
+    .t472__container_mobile-flex {
+        max-width: 100%;
+    }
+
+    .t472__row_mobile-flex {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        max-width: 100%;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .t472__scroll-icon-wrapper {
+        display: block;
+        padding: 0 40px 20px 0;
+        font-size: 0;
+        text-align: right;
+        color: #a1a1a1;
+        mix-blend-mode: multiply;
+    }
+
+    .t472__row_mobile-flex .t-col {
+        min-width: 38%;
+        max-width: 38%;
+        margin-bottom: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .t472__scroll-icon-wrapper {
+        padding: 0 20px 10px 0;
+    }
+
+    .t472__row_mobile-flex .t-col {
+        min-width: 70%;
+        max-width: 70%;
+    }
+
+    .t472__row_mobile-flex .t-col:first-child {
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .t472__row_mobile-flex .t-col {
+        min-width: 80%;
+        max-width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .t472__blockimg {
+        height: 320px;
+    }
+}
+	</style>
+	
+			<style data-tpl-id="454">
+		/* t454 */
+
+.t-menusub__menu {
+    display: none;
+}
+
+.t454__imglogo {
+    height: auto;
+    display: block;
+}
+
+.t454__linewrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.t454__horizontalline {
+    margin: 0;
+    border: 0;
+    background-color: #C2C2C2;
+    height: 1px;
+    right: 0;
+    bottom: 0;
+    margin: 0 40px 0 40px;
+}
+
+.t454__leftmenuwrapper,
+.t454__rightmenuwrapper {
+    display: inline-table;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.t454__leftmenuwrapper .t454__list,
+.t454__rightmenuwrapper .t454__list {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.t454__logowrapper {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: table;
+    height: inherit;
+    z-index: 100;
+}
+
+.t454__logowrapper2 {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    z-index: 100;
+}
+
+.t454__logowrapper2 a {
+    display: inline-block;
+}
+
+.t454__imglogo {
+    max-width: 300px;
+}
+
+.t454__leftwrapper,
+.t454__rightwrapper {
+    width: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+}
+
+.t454__leftwrapper {
+    text-align: right;
+    padding-right: 200px;
+    padding-left: 40px;
+    left: 0;
+}
+
+.t454__rightwrapper {
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 40px;
+    right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .t454__leftwrapper {
+        padding-left: 20px;
+    }
+
+    .t454__rightwrapper {
+        padding-right: 20px;
+    }
+}
+
+.t454 {
+    width: 100%;
+    height: 80px;
+    z-index: 990;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0);
+    transition: background-color 300ms linear;
+}
+
+.t454__beforeready {
+    visibility: hidden;
+}
+
+.t454 ul {
+    margin: 0px;
+}
+
+.t454__maincontainer {
+    width: 100%;
+    height: 80px;
+    display: table;
+    position: relative;
+}
+
+.t454__maincontainer.t454__c12collumns {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.t454__logo {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.t454__list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0 !important;
+}
+
+.t454__list_item {
+    clear: both;
+    font-family: 'TildaSans',Arial,sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.t454__list_item .t-active {
+    opacity: 0.7;
+}
+
+.t454__list_item:first-child {
+    padding-left: 0;
+}
+
+.t454__list_item:last-child {
+    padding-right: 0;
+}
+
+.t454 a,
+#allrecords .t454 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.t454.t454__positionabsolute {
+    position: absolute;
+}
+
+.t454.t454__positionfixed {
+    position: fixed;
+}
+
+.t454.t454__positionstatic {
+    position: static;
+}
+
+.t454__mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 980px) {
+    .t454__linewrapper {
+        display: none;
+    }
+
+    .t454 {
+        position: static;
+        text-align: center;
+        display: block;
+        margin: 0;
+        padding: 0;
+        height: auto !important;
+    }
+
+    .t454__maincontainer {
+        padding: 20px 0 40px 0;
+    }
+
+    .t454.t454__positionabsolute,
+    .t454.t454__positionfixed,
+    .t454.t454__positionstatic {
+        position: static;
+    }
+
+    .t454__imglogo {
+        width: auto;
+        box-sizing: border-box;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 100% !important;
+    }
+
+    .t454__imglogomobile.t454__imglogo {
+        max-width: 100% !important;
+    }
+
+    .t454__rightcontainer {
+        display: table;
+        position: static;
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .t454__leftmenuwrapper,
+    .t454__rightmenuwrapper,
+    .t454__leftwrapper,
+    .t454__rightwrapper {
+        height: initial;
+    }
+
+    .t454__logo {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .t454 img {
+        float: inherit;
+    }
+
+    .t454 .t454__list_item {
+        display: block;
+        text-align: center;
+        padding: 10px !important;
+        white-space: normal;
+    }
+
+    .t454__logo {
+        white-space: normal;
+        padding: 0px;
+    }
+
+    .t454__logowrapper {
+        position: static;
+        display: table;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .t454__logowrapper2 {
+        display: block;
+        position: static;
+    }
+
+    .t454__leftwrapper,
+    .t454__rightwrapper,
+    .rightmenuwrapper {
+        position: static;
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    .t454__rightmenuwrapper,
+    .t454__leftmenuwrapper,
+    .t454__leftmenuwrapper .t454__list,
+    .t454__rightmenuwrapper .t454__list {
+        display: block;
+    }
+}
+	</style>
+	
+		<script type="text/javascript" data-tpl-id="454">
+		function t454_setLogoPadding(recid) {
+	var rec = document.getElementById('rec' + recid);
+	if (!rec || window.innerWidth <= 980) return;
+	var menu = rec.querySelector('.t454');
+	var logo = menu ? menu.querySelector('.t454__logowrapper') : null;
+	var leftWrapper = menu ? menu.querySelector('.t454__leftwrapper') : null;
+	var rightWrapper = menu ? menu.querySelector('.t454__rightwrapper') : null;
+	var logoWidth = logo ? logo.offsetWidth : 0;
+	var updateWidth = (logoWidth / 2) + 50;
+	if (leftWrapper) leftWrapper.style.paddingRight = updateWidth + 'px';
+	if (rightWrapper) rightWrapper.style.paddingLeft = updateWidth + 'px';
+}
+
+	</script>
+			<style data-tpl-id="843">
+		/* t843 */
+
+.t843 .t-section__bottomwrapper {
+    margin-top: 105px;
+}
+
+.t843__fullscreenwidth {
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.t843__separator {
+    margin-bottom: 120px;
+}
+
+.t843__mobileimg {
+    display: none;
+}
+
+.t843__imgwrapper {
+    margin: 0 auto;
+}
+
+.t843__blockimg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.t843__textwrapper {
+    display: table;
+    width: 100%;
+}
+
+.t843 .t-card__btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.t843__content {
+    display: table-cell;
+}
+
+.t843 .t-card__title {
+    margin-bottom: 24px;
+}
+
+#allrecords .t843 .t-card__link {
+    outline: none;
+}
+
+.t843__rightcol {
+    margin-right: 0px;
+}
+
+.t843__leftcol {
+    margin-left: 0px;
+}
+
+.t843 .t843__content .t-btn {
+    margin-top: 30px;
+}
+
+.t843__fullscreenwidth .t843__leftcol .t843__textwrapper {
+    padding-right: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.t843__fullscreenwidth .t843__rightcol .t843__textwrapper {
+    padding-left: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.t843__cell {
+    height: auto !important;
+}
+
+.t843__marginauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 960px) {
+    .t843 .t-section__bottomwrapper {
+        margin-top: 45px;
+    }
+
+    .t843__fullscreenwidth {
+        padding: 0 20px;
+    }
+
+    .t843__textwrapper {
+        padding: 0px !important;
+    }
+
+    .t843__separator {
+        margin-bottom: 75px !important;
+    }
+
+    .t843__col {
+        padding: 0px !important;
+    }
+
+    .t843__cell {
+        display: block;
+        max-width: 100%;
+        width: initial;
+    }
+
+    .t843__top {
+        margin-bottom: 30px;
+    }
+
+    .t843__textwrapper {
+        height: auto !important;
+        margin-top: 30px;
+    }
+
+    .t843 .t-card__title {
+        margin-bottom: 15px;
+    }
+
+    .t843__mobileimg {
+        display: block;
+    }
+
+    .t843__desktopimg {
+        display: none;
+    }
+}
+	</style>
+	
+		<script type="text/javascript" data-tpl-id="843">
+		function t843_init(recId) {
+    var rec = document.querySelector('#rec' + recId);
+    if (!rec) return;
+    var container = rec.querySelector('.t843');
+    if (!container) return;
+    
+    t_onFuncLoad('t_card__moveClickOnCard', function () {
+        t_card__moveClickOnCard(recId);
+    });
+    
+    t_onFuncLoad('t_card__addFocusOnTab', function () {
+        t_card__addFocusOnTab(recId);
+    });
+
+    t843_setHeight(recId);
+
+    window.addEventListener('resize', t_throttle(function () {
+        if (window.noAdaptive && window.no  === true && window.isMobile) return;
+        t843_setHeight(recId);
+    }));
+
+    if (typeof jQuery !== 'undefined') {
+        $(container).bind('displayChanged', function () {
+            t843_setHeight(recId);
+        });
+    } else {
+        container.addEventListener('displayChanged', function () {
+            t843_setHeight(recId);
+        });
+    }
+
+    if (container && container.classList.contains('t843__previewmode')) {
+        setInterval(function () {
+            t843_setHeight(recId);
+        }, 5000);
+    }
+}
+
+function t843_setHeight(recId) {
+    var rec = document.querySelector('#rec' + recId);
+    if (!rec) return;
+    var container = rec.querySelector('.t843');
+    if (!container) return;
+    var blockImages = rec.querySelectorAll('.t843__blockimg');
+    var isLoaded = true;
+
+    for (var i = 0; i < blockImages.length; i++) {
+        var blockImage = blockImages[i];
+        var width = blockImage.getAttribute('data-image-width');
+        var height = blockImage.getAttribute('data-image-height');
+        var ratio = height / width;
+        var padding = ratio * 100;
+        blockImage.style.paddingBottom = padding + '%';
+
+        if (!blockImage.classList.contains('loaded')) {
+            isLoaded = false;
+        }
+    }
+
+    if (window.innerWidth > 960) {
+        var textWraps = rec.querySelectorAll('.t843__textwrapper');
+        var deskImages = rec.querySelectorAll('.t843__desktopimg');
+
+        for (var i = 0; i < textWraps.length; i++) {
+            textWraps[i].style.height = deskImages[i].clientHeight + 'px';
+        }
+    }
+
+    if (!isLoaded) {
+        if (window.lazy === 'y' || document.getElementById('allrecords').getAttribute('data-tilda-lazy') === 'yes') {
+            t_onFuncLoad('t_lazyload_update', function () {
+                t_lazyload_update();
+            });
+        }
+    }
+}
+	</script>
+		  <link href="https://front.tildacdn.com/plugins/sortable-lite/t-sortable-lite.min.css?v=70277" rel="stylesheet"><script src="https://front.tildacdn.com/plugins/sortable-lite/t-sortable-lite.min.js?v=70277"></script><link href="https://front.tildacdn.com/plugins/sortable/t-sortable.min.css?v=70277" rel="stylesheet"><script src="https://front.tildacdn.com/plugins/sortable/t-sortable.min.js?v=70277"></script></head>
+
+<body style="margin: 0px; overflow-anchor: none;" data-lang="RU" data-country="RU" data-ready-status="ready">
+
+
+<!-- Fixed main menu -->
+<div class="tp-menu" role="navigation" id="mainmenu">
+
+	<div id="info-alert" style="position:fixed; width:100%; z-index:10000;"></div>
+
+	<div class="tp-menu__wrapper tp-menu__wrapper_has-undo"><div class="tp-menu__left"><div class="tp-menu__waves tp-menu__waves_clickable"><svg xmlns="http://www.w3.org/2000/svg" width="21" height="60" viewBox="0 0 46 130" fill="none"><path d="M46 73.1C45 73.8 44.2 75.2 43.2 76.9C41.7 79.6 39.9 82.8 36.1 82.8C32.3 82.8 30.5 79.6 29 76.9C27.5 74.2 26.4 72.5 24.5 72.5C22.6 72.5 21.5 74.2 20 76.9C18.5 79.6 16.7 82.8 12.9 82.8C9.1 82.8 7.3 79.6 5.8 76.9C4.3 74.2 2.9 72.5 1 72.5C0.6 72.5 0.3 72.6 0 72.7V69.6C0.3 69.5 0.7 69.5 1 69.5C4.7 69.5 6.6 72.7 8.1 75.4C9.6 78.1 10.7 79.8 12.6 79.8C14.5 79.8 15.6 78.1 17.1 75.4C18.6 72.7 20.4 69.5 24.2 69.5C28 69.5 29.8 72.7 31.3 75.4C32.9 78.2 33.9 79.8 35.8 79.8C37.7 79.8 38.8 78.1 40.3 75.4C41.6 73.1 43.1 70.3 46 69.7V73.1Z" fill="black"></path><path d="M46 59.8C45 60.5 44.2 61.9 43.2 63.6C41.7 66.3 39.9 69.5 36.1 69.5C32.3 69.5 30.5 66.3 29 63.6C27.5 60.9 26.4 59.2 24.5 59.2C22.6 59.2 21.5 60.9 20 63.6C18.5 66.3 16.7 69.5 12.9 69.5C9.1 69.5 7.3 66.3 5.8 63.6C4.3 60.9 2.9 59.2 1 59.2C0.6 59.2 0.3 59.3 0 59.4V56.3C0.3 56.2 0.7 56.2 1 56.2C4.7 56.2 6.6 59.4 8.1 62.1C9.6 64.8 10.7 66.5 12.6 66.5C14.5 66.5 15.6 64.8 17.1 62.1C18.6 59.4 20.4 56.2 24.2 56.2C28 56.2 29.8 59.4 31.3 62.1C32.9 64.9 33.9 66.5 35.8 66.5C37.7 66.5 38.8 64.8 40.3 62.1C41.6 59.8 43.1 57 46 56.4V59.8Z" fill="black"></path><path d="M46 46.5C45 47.2 44.2 48.6 43.2 50.3C41.7 53 39.9 56.2 36.1 56.2C32.3 56.2 30.5 53 29 50.3C27.5 47.6 26.4 45.9 24.5 45.9C22.6 45.9 21.5 47.6 20 50.3C18.5 53 16.7 56.2 12.9 56.2C9.1 56.2 7.3 53 5.8 50.3C4.3 47.6 2.9 45.9 1 45.9C0.6 45.9 0.3 46 0 46.1V43C0.3 42.9 0.7 42.9 1 42.9C4.7 42.9 6.6 46 8.1 48.8C9.6 51.6 10.7 53.2 12.6 53.2C14.5 53.2 15.6 51.5 17.1 48.8C18.6 46.1 20.4 42.9 24.2 42.9C28 42.9 29.8 46.1 31.3 48.8C32.9 51.6 33.9 53.2 35.8 53.2C37.7 53.2 38.8 51.5 40.3 48.8C41.6 46.5 43.1 43.7 46 43.1V46.5Z" fill="black"></path><path d="M46 33.2C45 33.9 44.2 35.3 43.2 37C41.7 39.7 39.9 42.9 36.1 42.9C32.3 42.9 30.5 39.7 28.9 37C27.3 34.3 26.3 32.6 24.4 32.6C22.5 32.6 21.4 34.3 19.9 37C18.4 39.7 16.6 42.9 12.8 42.9C9 42.9 7.1 39.8 5.5 37C3.9 34.2 2.9 32.6 1 32.6C0.6 32.6 0.3 32.7 0 32.8V29.7C0.3 29.6 0.7 29.6 1 29.6C4.8 29.6 6.6 32.7 8.1 35.5C9.6 38.3 10.7 39.9 12.6 39.9C14.5 39.9 15.6 38.2 17.1 35.5C18.6 32.8 20.4 29.6 24.2 29.6C28 29.6 29.8 32.8 31.3 35.5C32.9 38.3 33.9 39.9 35.8 39.9C37.7 39.9 38.8 38.2 40.3 35.5C41.6 33.2 43.1 30.4 46 29.8V33.2Z" fill="black"></path><path d="M39.8 130C40.1 129.6 40.3 129.1 40.6 128.6C41.9 126.3 43.3 123.7 46 122.9V126.2C45 126.9 44.2 128.2 43.3 129.9L39.8 130Z" fill="black"></path><path d="M16.5 130C16.8 129.6 17 129.1 17.3 128.6C18.8 125.9 20.6 122.7 24.4 122.7C28.2 122.7 30 125.9 31.5 128.6C31.8 129.1 32.1 129.6 32.3 130H28.9C27.4 127.3 26.3 125.7 24.5 125.7C22.6 125.7 21.5 127.4 20.1 130H16.5Z" fill="black"></path><path d="M0 122.8C0.4 122.7 0.8 122.7 1.2 122.7C5 122.7 6.8 125.9 8.3 128.6C8.6 129.1 8.9 129.6 9.1 130H5.6C4.1 127.3 3 125.7 1.2 125.7C0.8 125.7 0.4 125.8 0 126L0 122.8Z" fill="black"></path><path d="M46 113C45 113.7 44.2 115.1 43.2 116.8C41.7 119.5 39.9 122.7 36.1 122.7C32.3 122.7 30.5 119.5 29 116.8C27.5 114.1 26.4 112.4 24.5 112.4C22.6 112.4 21.5 114.1 20 116.8C18.5 119.5 16.7 122.7 12.9 122.7C9.1 122.7 7.3 119.5 5.8 116.8C4.3 114.1 3.2 112.4 1.3 112.4C0.8 112.4 0.4 112.5 0 112.7V109.5C0.4 109.4 0.8 109.4 1.3 109.4C5 109.4 6.9 112.6 8.4 115.3C9.9 118 11 119.7 12.9 119.7C14.8 119.7 15.9 118 17.4 115.3C18.9 112.6 20.7 109.4 24.5 109.4C28.3 109.4 30.1 112.6 31.6 115.3C33.2 118.1 34.2 119.7 36.1 119.7C38 119.7 39.1 118 40.6 115.3C41.9 113 43.3 110.4 46 109.6V113Z" fill="black"></path><path d="M0 96.2C0.3 96.1 0.6 96.1 1 96.1C4.7 96.1 6.6 99.3 8.1 102C9.6 104.7 10.7 106.4 12.6 106.4C14.5 106.4 15.6 104.7 17.1 102C18.6 99.3 20.4 96.1 24.2 96.1C28 96.1 29.8 99.3 31.3 102C32.9 104.8 33.9 106.4 35.8 106.4C37.7 106.4 38.8 104.7 40.3 102C41.6 99.7 43.1 96.9 46 96.3V99.7C45 100.4 44.2 101.8 43.2 103.5C41.7 106.2 39.9 109.4 36.1 109.4C32.3 109.4 30.5 106.2 29 103.5C27.5 100.8 26.4 99.1 24.5 99.1C22.6 99.1 21.5 100.8 20 103.5C18.5 106.2 16.7 109.4 12.9 109.4C9.1 109.4 7.3 106.2 5.8 103.5C4.3 100.8 2.9 99.1 1 99.1C0.6 99.1 0.3 99.2 0 99.3L0 96.2Z" fill="black"></path><path d="M46 86.4C45 87.1 44.2 88.5 43.2 90.2C41.7 92.9 39.9 96.1 36.1 96.1C32.3 96.1 30.5 93 28.9 90.2C27.3 87.4 26.3 85.8 24.4 85.8C22.5 85.8 21.4 87.5 19.9 90.2C18.4 92.9 16.6 96.1 12.8 96.1C9 96.1 7.1 93 5.5 90.2C3.9 87.4 2.9 85.8 1 85.8C0.6 85.8 0.3 85.9 0 86V82.9C0.3 82.8 0.7 82.8 1 82.8C4.8 82.8 6.6 86 8.1 88.7C9.6 91.4 10.7 93.1 12.6 93.1C14.5 93.1 15.6 91.4 17.1 88.7C18.6 86 20.4 82.8 24.2 82.8C28 82.8 29.8 86 31.3 88.7C32.9 91.5 33.9 93.1 35.8 93.1C37.7 93.1 38.8 91.4 40.3 88.7C41.6 86.4 43.1 83.6 46 83V86.4Z" fill="black"></path><path d="M0 16.4C0.3 16.3 0.7 16.3 1 16.3C4.7 16.3 6.6 19.4 8.1 22.2C9.6 25 10.7 26.6 12.6 26.6C14.5 26.6 15.6 24.9 17.1 22.2C18.6 19.5 20.4 16.3 24.2 16.3C28 16.3 29.8 19.4 31.3 22.2C33 25 34 26.6 36 26.6C38 26.6 39 24.9 40.5 22.2C41.8 19.9 43.3 17.3 46 16.5V19.9C45 20.6 44.2 22 43.2 23.7C41.7 26.4 39.9 29.6 36.1 29.6C32.3 29.6 30.5 26.5 29 23.7C27.5 20.9 26.4 19.3 24.5 19.3C22.6 19.3 21.5 21 20 23.7C18.5 26.4 16.7 29.6 12.9 29.6C9.1 29.6 7.3 26.5 5.8 23.7C4.3 20.9 2.9 19.3 1 19.3C0.6 19.3 0.3 19.4 0 19.5L0 16.4Z" fill="black"></path><path d="M46 6.5C45 7.2 44.1 8.6 43.1 10.4C41.6 13.1 39.8 16.3 36 16.3C32.2 16.3 30.4 13.2 28.9 10.4C27.4 7.6 26.2 6 24.3 6C22.4 6 21.3 7.7 19.8 10.4C18.3 13.1 16.5 16.3 12.7 16.3C8.9 16.3 7.1 13.2 5.6 10.4C4.1 7.6 2.9 6 1 6C0.6 6 0.3 6.1 0 6.2V3.1C0.3 3 0.7 3 1 3C4.8 3 6.6 6.1 8.1 8.9C9.6 11.7 10.7 13.3 12.6 13.3C14.5 13.3 15.6 11.6 17.1 8.9C18.6 6.2 20.5 3 24.3 3C28.1 3 29.9 6.2 31.4 8.9C33 11.7 34 13.3 35.9 13.3C37.8 13.3 38.9 11.6 40.4 8.9C41.7 6.6 43.2 4 46 3.2V6.5Z" fill="black"></path><path d="M17.9999 0C16.7999 1.7 15.0999 3 12.6999 3C10.2999 3 8.5999 1.7 7.3999 0H17.9999Z" fill="black"></path><path d="M41.4 0C40.1 1.7 38.5 3 36 3C33.6 3 31.9 1.7 30.7 0H41.4Z" fill="black"></path></svg></div><div class="tp-menu__breadcrumbs"><div class="tp-menu__breadcrumbs__item-wrapper tp-menu__dashboard"><a href="/projects/" class="tp-menu__breadcrumbs__item"><div class="tp-menu__item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M5.83333 9.91667H9.16667V14.5H12.9167L13 7.5H14H15L7.5 0L0 7.5H2.08333V14.5H5.83333V9.91667Z" fill="black"></path></svg></div><div class="tp-menu__item__text">Мои сайты</div></a></div><div class="tp-menu__breadcrumbs__item-wrapper tp-menu__project"><div class="tp-menu__breadcrumbs__divider">/</div><a href="/projects/?projectid=10581083" class="tp-menu__breadcrumbs__item"><div class="tp-menu__item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><g clip-path="url(#clip0_2389_4762)"><path d="M7.5 14C7.5 14 4.46667 13.2503 4.46667 7.5C4.46667 1.74971 7.5 1 7.5 1M7.5 14C7.5 14 10.5333 13.1333 10.5333 7.5C10.5333 1.86667 7.5 1 7.5 1M7.5 14C4.51041 14 1.99221 11.9817 1.23367 9.23333M7.5 14C10.4896 14 13.0078 11.9817 13.7663 9.23333M7.5 14V1M7.5 1C4.51041 1 1.99221 3.0183 1.23367 5.76667M7.5 1C10.4896 1 13.0078 3.0183 13.7663 5.76667M1.23367 5.76667C1.08136 6.31849 1 6.89974 1 7.5C1 8.10026 1.08136 8.68151 1.23367 9.23333M1.23367 5.76667H13.7663M13.7663 5.76667C13.9186 6.31849 14 6.89974 14 7.5C14 8.10026 13.9186 8.68151 13.7663 9.23333M1.23367 9.23333H13.7663" stroke="black"></path></g><defs><clipPath id="clip0_2389_4762"><rect width="15" height="15" fill="white"></rect></clipPath></defs></svg></div><div class="tp-menu__item__text">ЭкоМосква</div></a></div><div class="tp-menu__breadcrumbs__item-wrapper tp-menu__page"><div class="tp-menu__breadcrumbs__divider tp-menu__breadcrumbs__divider_page">/</div><div class="tp-menu__breadcrumbs__item tp-menu__page__dropdown-toggler" data-pageid="54963547"><div class="tp-menu__item__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none"><path d="M8.05 1H3C2.44772 1 2 1.44772 2 2V13C2 13.5523 2.44771 14 3 14H12C12.5523 14 13 13.5523 13 13V5.5M8.05 1L13 5.5M8.05 1V4.5C8.05 5.05228 8.49772 5.5 9.05 5.5H13M5 8.5H10M5 10.5H10" stroke="black"></path></svg></div><div class="tp-menu__item__text">ЭкоМосква</div><div class="tp-menu__dropdown"><div class="tp-menu__dropdown__arrow js-page-dropdown-toggle"></div></div></div><div class="tp-menu__breadcrumbs__item_editable"></div></div></div></div><div class="tp-menu__right">
+		<ul class="tp-menu__navbar">
+			<li class="tp-menu__navbar__item tp-menu__navbar__item_redo tp-menu__navbar__item_mobile" id="redobutton">
+				<a class="tp-menu__navbar__button" href="javascript:tp__undoredo('redo');">Повторить</a>
+			</li>
+			<li class="tp-menu__navbar__item tp-menu__navbar__item_undo tp-menu__navbar__item_mobile" id="undobutton">
+				<a class="tp-menu__navbar__button" href="javascript:tp__undoredo('undo');">Отменить</a>
+			</li>
+			<li class="tp-menu__navbar__item tp-menu__navbar__item_mobile">
+				<a class="tp-menu__navbar__button js-btn-preview" href="/page/preview/?pageid=54963547&amp;lang=RU">Предпросмотр</a>
+			</li>
+			
+						<li class="tp-menu__navbar__item tp-menu__navbar__item_mobile">
+							<a class="tp-menu__navbar__button" href="javascript:pagePublish()" id="page_menu_publishlink">
+								<b>Опубликовать</b>
+							</a>
+						</li>
+					
+			<li class="tp-menu__navbar__item tp-menu__item-pagesettings">
+				<a class="tp-menu__navbar__button" href="javascript:showformEditPageSettings_new('54963547')">
+					Настройки
+				</a>
+			</li>
+			<li class="tp-menu__navbar__item">
+				<a class="tp-menu__navbar__button" href="https://help-ru.tilda.cc" target="_blank" rel="noopener">
+					Помощь
+				</a>
+			</li>
+			<li class="tp-menu__navbar__item tp-menu__navbar__item_more dropdown">
+				<a class="tp-menu__navbar__button dropdown-toggle" data-toggle="">Еще</a>
+				<ul class="dropdown-menu">
+					<li class="tp-menu__item-drop">
+						<a href="/projects/settings/?projectid=10581083">Настройки сайта</a>
+					</li>
+					<li class="tp-menu__item-drop">
+						<a href="javascript:showformEditPageSettings_new('54963547');">Настройки страницы</a>
+					</li>
+					<li class="tp-menu__item-drop">
+						<a href="javascript:showformEditProjectFonts('10581083');">Шрифты</a>
+					</li>
+					<li class="tp-menu__item-drop">
+						<a href="/projects/">Мои сайты</a>
+					</li>
+					<li class="tp-menu__item-drop">
+						<a href="/identity/">Профиль</a>
+					</li>
+					<li class="tp-menu__item-drop">
+						<a href="/identity/plan/">Тарифы и оплата</a>
+					</li>
+					<li class="tp-menu__item-drop">
+						<a href="https://help-ru.tilda.cc" target="_blank" rel="noopener">Помощь</a>
+					</li>
+					<li class="tp-menu__item-drop" id="blocksmapbutton">
+						<a data-hook="blockmap-button" href="#">Блоки на странице</a>
+					</li>
+					<li class="tp-menu__item-drop tp-menu__item-drop_icon">
